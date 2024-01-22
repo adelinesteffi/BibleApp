@@ -21,11 +21,11 @@ public class VerseOfTheDayFragment  extends Fragment
         public static VerseOfTheDayFragment newInstance(BibleModel verse) {
             VerseOfTheDayFragment ff = new VerseOfTheDayFragment();
             VerseText =verse.getfullVerseText();
-            Log.d("testing", "VerseText"+VerseText);
+          //  Log.d("testing", "VerseText"+VerseText);
 
             color    = verse.getBackGroundColor();
 
-            Log.d("testing", "icolor"+color);
+           // Log.d("testing", "icolor"+color);
             return ff;    }
         @Nullable
         @Override
@@ -36,7 +36,7 @@ public class VerseOfTheDayFragment  extends Fragment
             verseTextView = view.findViewById(R.id.questionTextView);
             verseTextView.setText(VerseText);
             verseTextView.setBackgroundResource(color);
-            Log.d("testing", "icolor near set bvk grnd "+color);
+          //  Log.d("testing", "icolor near set bvk grnd "+color);
 
 
             return view;
